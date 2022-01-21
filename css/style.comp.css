@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --color-primary: hsl(255, 78%, 60%);
+  --primary-light: #9c82e7;
+  --color-primary-dark: rgb(41, 23, 94);
+  --color-secondary: hsl(0, 72%, 65%);
+  --color-secondary-light: #f23f7b;
+  --color-secondary-dark: #f54559;
+  --color-background: hsl(217, 28%, 15%);
+  --color-form-false: rgb(255, 119, 48);
+  --color-form-true: rgb(85, 197, 122);
+  --color-grey-light-1: rgb(222, 226, 230);
+  --color-grey-light-2: rgb(73, 80, 87);
+  --color-grey-dark: #212529;
+  --color-grey-dark-2: #343a40;
+  --color-grey-dark-3: rgb(51, 51, 51);
+  --color-footer: hsl(216, 53%, 9%);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --text-light: #f1f3f5;
+  --text-dark: #212529;
+  --link-color: hsl(176, 68%, 64%);
+  --link-color-hover: hsl(198, 60%, 50%);
+  --color-tag: #495057;
+  --color-card: #343a40; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-top-small {
+  margin-top: 1.2rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-large {
+  margin-top: 10rem !important; }
+
+.u-margin-top-xlarge {
+  margin-top: 12rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.2rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-large {
+  margin-bottom: 10rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-large {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-bottom-xlarge {
+  margin-bottom: 12rem !important; }
+
+.u-margin-bottom-xxlarge {
+  margin-bottom: 15rem !important; }
+
+.u-margin-bottom-xxxlarge {
+  margin-bottom: 20rem !important; }
+
+.mobile-only {
+  display: none; }
+  @media (max-width: 56.25em) {
+    .mobile-only {
+      display: block; } }
+
+.hide-mobile {
+  display: block; }
+  @media (max-width: 56.25em) {
+    .hide-mobile {
+      display: none; } }
+
+.u-align-self {
+  align-self: center;
+  justify-self: center; }
+
+.hidden {
+  display: none; }
+
+*,
+*::after,
+*::before {
+  /** Changes all in document (resets the defualts) **/
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /** Inherits border box from body **/
+  text-decoration: none; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /** changes rem to 10px   (defualt is 16px)**/ }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 45%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 150em) {
+    html {
+      font-size: 85%; } }
+
+body {
+  box-sizing: border-box;
+  /** Change Box model so padding and width dont effect box size **/
+  padding: 0rem;
+  background-color: var(--color-background);
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 0; } }
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400; }
+
+a {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  color: var(--link-color); }
+  a:hover, a:active {
+    color: var(--link-color-hover); }
+
+p {
+  font-size: 2rem;
+  font-weight: 400; }
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500; }
+
+h2 {
+  font-size: 4rem;
+  font-weight: 500; }
+
+h3 {
+  font-size: 3.8rem;
+  font-weight: 400; }
+
+h4 {
+  font-size: 3.4rem;
+  font-weight: 500; }
+
+h5 {
+  font-size: 3rem;
+  font-weight: 500; }
+
+h6 {
+  font-size: 2.6rem;
+  font-weight: 500; }
+
+::-webkit-scrollbar {
+  width: 18px;
+  margin: 1px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--color-grey-dark), 0.9); }
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 100vw;
+  border: 3px solid var(--color-grey-dark); }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light); }
+
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: var(--color-primary) var(--color-grey-dark); } }
+
+.btn {
+  font-family: "lato", sans-serif;
+  font-size: 2.5rem;
+  color: var(--link-color-hover);
+  background-color: var(--color-white);
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+  .btn:hover {
+    background-color: var(--color-grey-light-1);
+    color: var(--link-color); }
+  .btn:active {
+    background-color: var(--color-grey-light-2);
+    color: var(--color-white); }
+
+.hero {
+  width: 100%;
+  padding: 10rem 10vw 10rem 10vw; }

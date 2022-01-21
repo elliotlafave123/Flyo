@@ -1,0 +1,32 @@
+.productive-container {
+	width: 100%;
+	background-color: hsl(218, 28%, 13%);
+	padding: 2rem 6vw 20rem 4vw;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10rem;
+
+	img {
+		justify-self: center;
+		align-self: center;
+	}
+}
+
+.productive-content {
+	justify-self: center;
+	align-self: center;
+
+	h1 {
+		width: 50%;
+		margin-bottom: 2rem;
+	}
+
+	p {
+		margin-bottom: 1.4rem;
+		color: #fff;
+		font-size: 1.6rem;
+		font-weight: 400;
+		width: 70%;
+	}
+}
