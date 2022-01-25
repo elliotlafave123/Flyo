@@ -18,6 +18,7 @@ btnsOpenModal.forEach((btn) => {
 });
 
 const btnLogIn = document.getElementById("logInBtn");
-btnLogIn.addEventListener("click", () => {
+btnLogIn.addEventListener("click", (e) => {
+	e.preventDefault();
 	window.location = "app.html";
 });
