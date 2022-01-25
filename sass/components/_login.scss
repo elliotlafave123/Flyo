@@ -1,0 +1,57 @@
+.login-popup-container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 100;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.close-modal {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	background-color: transparent;
+	border: none;
+
+	color: rgb(110, 110, 113);
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.login-popup {
+	width: 25%;
+	z-index: 105;
+	background-color: hsl(216, 53%, 9%);
+	padding: 2rem 2rem;
+	border-radius: 0.5rem;
+
+	position: relative;
+	form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2.2rem;
+
+		label {
+			color: #fff;
+			font-size: 2rem;
+			margin: 1rem 0;
+		}
+
+		input {
+			border: none;
+			border-radius: 3rem;
+			font-size: 2.6rem;
+			padding: 0.5rem;
+			background-color: hsl(219, 30%, 18%);
+		}
+
+		button {
+			margin-top: 3rem;
+		}
+	}
+}

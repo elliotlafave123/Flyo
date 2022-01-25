@@ -21,6 +21,22 @@
 		<title>Fylo</title>
 	</head>
 	<body>
+		<div class="login-popup-container" id="modalWindow">
+			<div class="login-popup">
+				<button class="close-modal" id="close-modal">
+					<i class="far fa-times-circle"></i>
+				</button>
+				<h2>Log In</h2>
+
+				<form>
+					<label for="username">Username</label>
+					<input type="text" name="username" />
+					<label for="username">Password</label>
+					<input type="text" name="username" />
+					<button class="btn">Log In</button>
+				</form>
+			</div>
+		</div>
 		<nav>
 			<div class="header-img">
 				<img src="images/logo.svg" alt="" />
@@ -28,7 +44,7 @@
 			<div class="navigation">
 				<a href="#">Features</a>
 				<a href="#">Team</a>
-				<a href="#">Sign In</a>
+				<a href="#" class="openmodal">Sign In</a>
 			</div>
 		</nav>
 
@@ -43,7 +59,7 @@
 					location. Access them wherever you need, share and
 					collaborate with friends family, and co-workers.
 				</p>
-				<a href="#" class="btn">Get Started</a>
+				<button class="btn openmodal">Get Started</button>
 			</div>
 			<img
 				src="images/bg-curvy-desktop.svg"
@@ -225,4 +241,5 @@
 			</div>
 		</footer>
 	</body>
+	<script src="scripts/modal.js"></script>
 </html>
