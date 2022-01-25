@@ -30,6 +30,11 @@
 
 	img {
 		height: 40vh;
+
+		@include respond(tab-port) {
+			width: 90%;
+			height: auto;
+		}
 	}
 }
 

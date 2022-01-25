@@ -278,7 +278,7 @@ nav {
   width: 20%; }
   @media (max-width: 56.25em) {
     .navigation {
-      width: 50%; } }
+      width: 60%; } }
   .navigation a {
     color: #fff;
     font-size: 2rem;
@@ -414,6 +414,10 @@ footer {
     margin-bottom: 15rem; }
   .landing-container img {
     height: 40vh; }
+    @media (max-width: 56.25em) {
+      .landing-container img {
+        width: 90%;
+        height: auto; } }
 
 .landing-background {
   width: 100%;
