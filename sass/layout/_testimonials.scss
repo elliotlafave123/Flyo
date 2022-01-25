@@ -18,6 +18,10 @@
 	grid-template-columns: repeat(3, 1fr);
 	gap: 5rem;
 
+	@include respond(tab-port) {
+		grid-template-columns: 1fr;
+	}
+
 	&__quotes {
 		height: 5rem;
 		position: absolute;

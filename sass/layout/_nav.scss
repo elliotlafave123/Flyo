@@ -7,8 +7,16 @@ nav {
 
 	padding: 8rem 8rem 0rem 8rem;
 
+	@include respond(tab-port) {
+		padding: 4rem 4rem 0rem 4rem;
+	}
+
 	img {
 		height: 5rem;
+
+		@include respond(tab-port) {
+			height: 3.6rem;
+		}
 	}
 }
 
@@ -19,6 +27,10 @@ nav {
 	justify-content: space-between;
 
 	width: 20%;
+
+	@include respond(tab-port) {
+		width: 50%;
+	}
 
 	a {
 		color: #fff;

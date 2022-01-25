@@ -4,6 +4,11 @@
 	font-weight: 700;
 	color: #fff;
 
+	@include respond(tab-port) {
+		font-size: 2rem;
+		padding: 1.7rem 9rem;
+	}
+
 	background: linear-gradient(
 		to right,
 		hsl(176, 68%, 64%),
@@ -11,6 +16,7 @@
 	);
 	padding: 1.5rem 7rem;
 	border-radius: 5rem;
+	border: none;
 
 	transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 

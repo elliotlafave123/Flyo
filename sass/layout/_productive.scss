@@ -7,19 +7,30 @@
 	grid-template-columns: repeat(2, 1fr);
 	gap: 10rem;
 
+	@include respond(tab-port) {
+		grid-template-columns: 1fr;
+	}
+
 	img {
 		justify-self: center;
 		align-self: center;
+		width: 80%;
 	}
 }
 
 .productive-content {
 	justify-self: center;
 	align-self: center;
+	width: 100%;
 
 	h1 {
 		width: 50%;
 		margin-bottom: 2rem;
+
+		@include respond(tab-port) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	p {
@@ -28,5 +39,22 @@
 		font-size: 1.6rem;
 		font-weight: 400;
 		width: 70%;
+
+		@include respond(tab-port) {
+			width: 100%;
+			font-size: 1.8rem;
+		}
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		width: max-content;
+
+		img {
+			height: 2rem;
+			width: 2rem;
+			margin-left: 0.5rem;
+		}
 	}
 }

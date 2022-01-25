@@ -19,15 +19,6 @@ a {
 
 	color: $link-color;
 
-	display: flex;
-	align-items: center;
-	width: max-content;
-
-	img {
-		height: 1.4rem;
-		margin-left: 0.5rem;
-	}
-
 	&:hover,
 	&:active {
 		color: $link-color-hover;
@@ -44,6 +35,10 @@ h1 {
 	font-weight: 700;
 	font-family: "Raleway";
 	color: #fff;
+
+	@include respond(tab-port) {
+		font-size: 3rem;
+	}
 }
 
 h2 {

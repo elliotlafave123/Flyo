@@ -19,12 +19,24 @@ footer {
 
 	p {
 		font-size: 1.4rem;
+
+		@include respond(tab-port) {
+			font-size: 1.6rem;
+		}
+	}
+
+	@include respond(tab-port) {
+		grid-template-columns: 1fr;
 	}
 }
 
 .footer-links {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
+	@include respond(tab-port) {
+		grid-template-columns: 1fr;
+	}
 
 	a {
 		border: none;
@@ -72,7 +84,17 @@ footer {
 		border-radius: 50%;
 
 		display: flex;
+		flex-direction: row;
 		justify-content: center;
-		align-items: center;
+		padding-top: 0.2rem;
+
+		@include respond(tab-port) {
+			padding-top: 1rem;
+		}
+	}
+
+	@include respond(tab-port) {
+		width: 50%;
+		margin: 0 auto;
 	}
 }
