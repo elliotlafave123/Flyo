@@ -21,6 +21,10 @@
 	color: rgb(110, 110, 113);
 	font-size: 1.6rem;
 	cursor: pointer;
+
+	@include respond(tab-port) {
+		font-size: 2.2rem;
+	}
 }
 
 .login-popup {
@@ -29,6 +33,10 @@
 	background-color: hsl(216, 53%, 9%);
 	padding: 2rem 2rem;
 	border-radius: 0.5rem;
+
+	@include respond(tab-port) {
+		width: 90%;
+	}
 
 	position: relative;
 	form {
@@ -40,6 +48,10 @@
 			color: #fff;
 			font-size: 2rem;
 			margin: 1rem 0;
+
+			@include respond(tab-port) {
+				margin: 2.4rem 0 1rem 0;
+			}
 		}
 
 		input {

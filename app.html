@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Flyo</title>
+	</head>
+	<body>
+		<div class="app-background">
+			<img
+				src="images/app/bg-desktop.png"
+				srcset="
+					images/app/bg-mobile.png   900w,
+					images/app/bg-desktop.png 1000w
+				"
+				class="app-background__img"
+			/>
+
+			<div class="app-container">
+				<nav class="app-navigation">
+					<img src="images/logo.svg" alt="" />
+					<div class="app-navigation__icons">
+						<div class="app-navigation__icon">
+							<img src="images/app/icon-document.svg" alt="" />
+						</div>
+						<div class="app-navigation__icon">
+							<img src="images/app/icon-folder.svg" alt="" />
+						</div>
+						<div class="app-navigation__icon">
+							<img src="images/app/icon-upload.svg" alt="" />
+						</div>
+					</div>
+				</nav>
+
+				<div class="app-storage">
+					<div class="app-storage__left">
+						<span>185</span> GB LEFT
+					</div>
+
+					<p>You've used <span>815 GB</span> of your storage</p>
+
+					<div class="storage-bar">
+						<div class="storage-bar__bar">
+							<div class="storage-bar__bar__circle"></div>
+						</div>
+					</div>
+
+					<div class="storage-bar__numbers">
+						<p>0 GB</p>
+						<p>1000 GB</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

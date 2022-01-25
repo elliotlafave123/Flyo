@@ -42,6 +42,11 @@
 	width: 100%;
 	height: 110vh;
 
+	@include respond(tab-port) {
+		padding: 2rem 0 3rem 0;
+		height: auto;
+	}
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
